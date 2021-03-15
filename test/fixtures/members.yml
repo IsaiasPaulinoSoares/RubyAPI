@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chal: one
+  name: MyString
+
+two:
+  chal: two
+  name: MyString
