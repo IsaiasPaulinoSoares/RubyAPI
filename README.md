@@ -3,20 +3,8 @@
 
 Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Hello, This is an example of API rest made in Ruby, passing data formatted in the database in json, via get request. 
+-Some features:
+  *Uses the json.api library,
+  *versioned database,
+  *Rails Framewor
