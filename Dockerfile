@@ -1,4 +1,4 @@
-FROM ruby:3.0.0-stretch
+FROM ruby:3.0.0
 
 # Update the package lists before installing.
 RUN apt-get update -qq
@@ -11,12 +11,7 @@ RUN apt-get update -qq
 # * the mysql CLI and client library
 RUN apt-get install -y \
     build-essential \
-    ca-certificates \
-    netcat-traditional \
-    emacs \
-    vim \
-    mysql-client \
-    default-libmysqlclient-dev
+    ca-certificates
 
 # Install node from nodesource
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
@@ -45,6 +40,6 @@ RUN bundle install
 COPY . ${APP_HOME}
 
 # Map port 8080 to the outside world (your local computer)
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT ["sh", "./entrypoint.sh"]
