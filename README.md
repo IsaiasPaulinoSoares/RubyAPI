@@ -7,4 +7,5 @@ Hello, This is an example of API rest made in Ruby, passing data formatted in th
 - Some features:
   * Uses the json.api library,
   * versioned database,
-  * Rails Framewor
+  * Rails Framework
+  * Dokerized API
